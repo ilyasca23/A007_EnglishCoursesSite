@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f9ff;
+    color: #1e293b;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .header {
+    background: #0f172a;
+    padding: 15px 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn-nav {
+    background: #1e293b;
+    padding: 8px 18px;
+    border-radius: 25px;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #1e293b, #173997);
+    color: white;
+    padding: 80px 0;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    margin-bottom: 25px;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: #1e293b;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .hero-image img {
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  .section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #1e293b;
+  }
+  
+  .light {
+    background: #e0f2fe;
+  }
+  
+  .about-grid,
+  .courses-grid,
+  .reviews-grid {
+    display: grid;
+    gap: 25px;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .about-card,
+  .course-card,
+  .review-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  @media(max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      width: 100%;
+    }
+  
+    .menu {
+      display: none;
+    }
+  }
+  
